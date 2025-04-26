@@ -83,14 +83,16 @@ export function FileUploader({ onFileSelect }: FileUploaderProps) {
       <p className="text-sm text-gray-400 mb-4">
         Supports PDF, Word (.doc, .docx), and Image files (.jpg, .jpeg, .png)
       </p>
-      <Button
-        as="label"
+      <label 
         htmlFor="file-upload"
-        variant="default"
-        className="bg-resume-blue hover:bg-resume-lightBlue"
       >
-        Select File
-      </Button>
+        <Button
+          variant="default"
+          className="bg-resume-blue hover:bg-resume-lightBlue cursor-pointer"
+        >
+          Select File
+        </Button>
+      </label>
     </div>
   );
 }
